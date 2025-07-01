@@ -115,7 +115,7 @@ function Guidelines({ onSubmitGuidelines }) {
             font-family: "Inter", sans-serif;
         }
         .main {
-            background-image: url('./images/form-background.png'); /* Placeholder image */
+            
             background-position: center;
             background-repeat: repeat;
             min-height: 100vh;
