@@ -1,0 +1,121 @@
+.login-wrapper {
+  width: 100%;
+  height: auto; /* height will automatically match content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  font-family: sans-serif;
+
+  background-image: url("../../public/images/form-background.png"); /* your background */
+  background-repeat: repeat;
+  background-position: center;
+}
+
+
+.login-title {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #0074cc;
+  margin-bottom: 20px;
+}
+
+.login-box {
+  background: rgb(248, 249, 251);
+  border-radius: 10px;
+  padding: 30px;
+  width: 350px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-bottom:4px solid #0074cc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: #0074cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Placeholder for icons (add actual icons or font-awesome if needed) */
+
+
+.captcha-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.captcha-img {
+  width: 160px;
+  height: 40px;
+  background: #eee;
+  display: inline-block;
+}
+
+.refresh-btn {
+  background: none;
+  border: none;
+  color: #0d6efd;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.captcha-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.login-btn {
+  background: #6c757d;
+  color: white;
+  width: 50%;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.forgot-text {
+  text-align: center;
+  font-size: 13px;
+  color: #444;
+}
+
+.forgot-text a {
+  color: #0d6efd;
+  text-decoration: underline;
+}
