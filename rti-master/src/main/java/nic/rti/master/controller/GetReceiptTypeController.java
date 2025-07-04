@@ -4,7 +4,9 @@ package nic.rti.master.controller;
 import nic.rti.master.entity.ReceiptType;
 import nic.rti.master.service.GetReceiptTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,8 +19,14 @@ public class GetReceiptTypeController {
     private GetReceiptTypeService receiptTypeService;
 
     @GetMapping(value = "/GetReceiptType", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<ReceiptType> getReceiptType() {
-        return receiptTypeService.getReceiptType();
+    public ResponseEntity<List<ReceiptType>> getReceiptType() {
+
+        List<ReceiptType> receiptType = receiptTypeService.getReceiptType();
+        if(receiptType !=null && !receiptType.isEmpty()){
+            return new ResponseEntity<>(receiptType, HttpStatus.OK);
+
+        }
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
 }

@@ -5,7 +5,11 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 @Entity
 @Table(schema = "RTIMIS", name = "AppealReasons")
 public class AppealReason {
@@ -20,28 +24,5 @@ public class AppealReason {
     @Column(name = "U_Appreason_dtls", length = 100)
     private String uAppReasonDtls;
 
-    public String getAppReason() {
-        return appReason;
-    }
-
-    public String getAppReasonDtls() {
-        return appReasonDtls;
-    }
-
-    public String getuAppReasonDtls() {
-        return uAppReasonDtls;
-    }
-
-    public void setAppReason(String appReason) {
-        this.appReason = appReason;
-    }
-
-    public void setAppReasonDtls(String appReasonDtls) {
-        this.appReasonDtls = appReasonDtls;
-    }
-
-    public void setuAppReasonDtls(String uAppReasonDtls) {
-        this.uAppReasonDtls = uAppReasonDtls;
-    }
 
 }

@@ -1,0 +1,5 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Ignore local config file
+rti-master/src/main/resources/application.properties

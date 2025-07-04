@@ -1,6 +1,7 @@
 package nic.rti.master.service;
 
 
+import lombok.extern.slf4j.Slf4j;
 import nic.rti.master.dao.GetReasonListRepository;
 import nic.rti.master.entity.ReasonList;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Slf4j
 @Service
 public class GetReasonListService {
 
@@ -16,7 +18,13 @@ public class GetReasonListService {
     private GetReasonListRepository reasonListRepository;
 
     public List<ReasonList> getReasonList() {
-        return reasonListRepository.findAll(Sort.by("reasonDtls"));
+        try{
+            return reasonListRepository.findAll(Sort.by("reasonDtls"));
+
+        }catch (Exception e){
+            log.error("Exception",e);
+            throw new RuntimeException(e);
+        }
     }
 
 }
