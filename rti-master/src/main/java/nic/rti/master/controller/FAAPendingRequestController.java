@@ -35,4 +35,6 @@ public class FAAPendingRequestController {
 
         return pendingRequestService.fetchPendingRequests(dto);
     }
+    //EndPoint
+    //http://localhost:8080/rti-master/rti-faa/pending-requests?records_type=UNDER_PROCESS&appl_id=123&limit=10&offset=0
 }
