@@ -3,6 +3,8 @@ package nic.rti.master.service.impl;
 import lombok.RequiredArgsConstructor;
 import nic.rti.master.dao.FAAPendingRequestRepository;
 import nic.rti.master.dto.*;
+import nic.rti.master.dto.*;
+import nic.rti.master.dao.FAAPendingRequestRepository;
 import nic.rti.master.service.FAAPendingRequestService;
 import org.springframework.stereotype.Service;
 
@@ -45,6 +47,27 @@ public class FAAPendingRequestServiceImpl implements FAAPendingRequestService {
                 result = faaRepo.fetchPending20Days(applId, limit, offset);
                 totalCount = faaRepo.countPending20Days(applId);
                 break;
+
+//            case "COMMENT_CPIO":
+//                result = faaRepo.fetchCommentCPIO(applId, limit, offset);
+//                totalCount = faaRepo.countCommentCPIO(applId);
+//                break;
+//
+//            case "MODIFY":
+//                result = faaRepo.fetchModify(applId, limit, offset);
+//                totalCount = faaRepo.countModify(applId);
+//                break;
+//
+//            case "NEW":
+//                result = faaRepo.fetchNew(applId, limit, offset);
+//                totalCount = faaRepo.countNew(applId);
+//                break;
+//
+//            case "PENDING_20_DAYS":
+//                result = faaRepo.fetchPending20Days(applId, limit, offset);
+//                totalCount = faaRepo.countPending20Days(applId);
+//                break;
+
             default:
                 throw new IllegalArgumentException("Invalid record type: " + recordsType);
         }
