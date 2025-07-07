@@ -1,0 +1,66 @@
+import React from 'react';
+
+function App() {
+  return (
+    <div className="font-sans bg-gray-50 min-h-screen">
+      {/* Header */}
+      <div className="bg-white shadow-md px-8 py-4 border-b border-gray-200">
+        <div className="flex justify-between items-center">
+          <h2 className="text-xl font-semibold text-blue-700">Step 2: Dashboard</h2>
+          <p className="text-blue-600 font-medium">Page Name: index</p>
+        </div>
+      </div>
+
+      {/* Title */}
+      <div className="text-center py-6">
+        <h1 className="text-2xl font-bold text-blue-800">Right to Information Online Portal</h1>
+        <p className="text-gray-600 text-sm">
+          An initiative of Administrative Reforms, Training, Pension and Public Grievances Department, Government of Tripura
+        </p>
+      </div>
+
+      {/* Top Navbar */}
+      <div className="bg-blue-700 text-white text-sm px-10 py-2 flex space-x-6 justify-center font-medium">
+        <a href="#">HOME</a>
+        <a href="#">SEARCH</a>
+        <a href="#">ASSIGNMENT</a>
+        <a href="#">UTILITY</a>
+        <a href="#">REPORTS</a>
+        <a href="#">LOGOUT</a>
+      </div>
+
+      {/* Authority Info */}
+      <div className="text-center mt-6 space-y-2">
+        <p><strong>PUBLIC AUTHORITY :</strong> Tripura Public Service Commission</p>
+        <p><strong>Welcome to PIO Module of RTI-MIS</strong></p>
+        <p><strong>ROLE :</strong> PIO</p>
+        <p><strong>USER :</strong> SHRI XXXX XXXX</p>
+      </div>
+
+      {/* Dashboard Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-8 mt-6 text-center">
+        <div className="border-2 border-blue-600 rounded-lg p-6 bg-white shadow-md">
+          <div className="text-orange-500 text-4xl mb-2">📂</div>
+          <h3 className="font-bold mb-2 text-gray-800">PENDING FOR DISPOSED OFF</h3>
+          <p className="text-red-600 text-2xl font-bold">4</p>
+        </div>
+        <div className="border-2 border-blue-600 rounded-lg p-6 bg-white shadow-md">
+          <div className="text-orange-500 text-4xl mb-2">📂</div>
+          <h3 className="font-bold mb-2 text-gray-800">NEW<br />RTI REQUESTS UNDER PROCESS</h3>
+          <p className="text-red-600 text-2xl font-bold">3 | 6</p>
+        </div>
+        <div className="border-2 border-blue-600 rounded-lg p-6 bg-white shadow-md">
+          <div className="text-orange-500 text-4xl mb-2">📂</div>
+          <h3 className="font-bold mb-2 text-gray-800">APPEALS<br />RAISED / DISPOSED</h3>
+          <p className="text-red-600 text-2xl font-bold">6 / 7</p>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <footer className="mt-12 text-center bg-blue-800 text-white text-sm p-4">
+      </footer>
+    </div>
+  );
+}
+
+export default App;
