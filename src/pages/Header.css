@@ -1,0 +1,141 @@
+/* tanisha gr 8 */
+.header {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  padding: 0px 0px;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+img{
+  padding: 10px;
+  height: 80px;
+}
+h1{
+    color: white;
+    background-color: #000;
+    text-align: right;
+    padding-right: 15px;
+    display: block;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+/* Desktop */
+.header-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-logos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.divider {
+  height: 60px;
+  width: 1px;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.header-center {
+  text-align: center;
+  cursor: pointer;
+  max-width: 5000px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 22px;
+  color:#0074cc;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #666;
+}
+
+/* Login Dropdown */
+.login-dropdown {
+  position: relative;
+}
+
+.login-btn {
+  background-color: #0074cc;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 160px;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content div {
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.dropdown-content div:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mobile View */
+.header-mobile {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-text {
+  text-align: center;
+  flex-grow: 1;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.title-sm {
+  font-size: 12px;
+  font-weight: bold;
+  color: #004aad;
+}
+
+.subtitle-sm {
+  font-size: 8px;
+  color: #666;
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+  .header-desktop {
+    display: none;
+  }
+  .header-mobile {
+    display: flex;
+  }
+}

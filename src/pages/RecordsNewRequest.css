@@ -1,0 +1,52 @@
+/* tanisha gr8 */
+body {
+  background-image: url('C:\Users\tanis\reactjs\src\pages\form-background.png');
+}
+.records-container {
+  font-family: Arial, sans-serif;
+  padding: 20px 20px 160px 20px;
+  text-align: center;
+}
+
+.records-header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: maroon;
+  font-size: 16px;
+}
+
+.records-table {
+  width: 70%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  border:#7e7575;
+  box-shadow: 0 0 15px #ccc;
+  background-color: #f9f9f9;
+}
+
+.records-table th,
+.records-table td {
+  border: 1px solid #7e7575;
+  padding: 4px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #dddada;
+}
+
+.records-table th {
+  border:solid black;
+  background-color: #686464;
+  color: #fff;
+}
+
+.records-table input[type="radio"] {
+  transform: scale(1.2);
+}
+
+.bold-text {
+  font-weight: bold;
+  color: maroon;
+}
