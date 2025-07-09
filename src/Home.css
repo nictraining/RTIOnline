@@ -1,0 +1,16 @@
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Font size utility if not using Bootstrap's built-in sizes */
+.fs-3xl {
+  font-size: 2rem;
+}
+.fs-lg {
+  font-size: 1.25rem;
+}

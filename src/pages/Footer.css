@@ -1,0 +1,74 @@
+/* tanisha gr 8 */
+body{
+    margin: 0;
+}
+.footer {
+  background: #0074cc;
+  color: white;
+  padding: 20px 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-links.mobile {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-links.mobile .quick-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.divider {
+  color: white;
+  opacity: 0.6;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.footer-text.mobile {
+  display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .footer-links.desktop,
+  .footer-text.desktop {
+    display: none;
+  }
+
+  .footer-links.mobile,
+  .footer-text.mobile {
+    display: flex;
+    display: block;
+  }
+
+  .footer-link.block {
+    display: block;
+    margin: 5px 0;
+  }
+}

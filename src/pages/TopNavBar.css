@@ -1,0 +1,29 @@
+/* tanisha gr8 */
+.top-navbar {
+  background-color: #0074cc;
+  padding: 1px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.nav-links li a {
+  font-weight: lighter;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
