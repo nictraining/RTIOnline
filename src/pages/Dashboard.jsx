@@ -1,4 +1,3 @@
-// tanisha gr8
 import React from 'react';
 import './Dashboard.css';
 
