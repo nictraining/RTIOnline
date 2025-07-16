@@ -1,52 +1,76 @@
-// tanisha gr8
 import React from 'react';
 import './Dashboard.css';
+import { useNavigate } from 'react-router-dom';
 
 function Dashboard() {
+
+   const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem("isLoggedIn");
+    navigate("/");
+  };
+
+
+
   return (
     <div className="dashboard-container">
-      {/* Header Section */}
-      <div className="dashboard-header">
-        <div className="left-title">PUBLIC AUTHORITY : Tripura Public Service Commission</div>
-        <div className="center-title">
-          Welcome to PIO Module of RTI-MIS
-          <br />
-          ROLE : PIO
+      {/* Header */}
+      <header className="header">
+        <div className="gov-logo">🇮🇳</div>
+        <div className="portal-title">
+          <h2>Right to Information Online Portal</h2>
+          <p>
+            An initiative of Administrative Reforms, Training, Pension and Public Grievances Department, Government of Tripura
+          </p>
         </div>
-        <div className="right-title">USER : SHRI XXXX XXXX</div>
-      </div>
+        <div className="login-dropdown">
+         <button onClick={handleLogout}>Logout</button>
+        </div>
+      </header>
 
-      {/* Cards Section */}
-      <div className="dashboard-cards">
-        {/* Card 1 */}
-        <div className="dashboard-card">
-          <div className="card-icon">📩</div>
-          <div className="card-label">
-            <div className="card-title">PENDING FOR DISPOSED OFF</div>
-            <div className="card-number">4</div>
+      {/* Navigation Bar */}
+      <nav className="navbar">
+        <ul>
+          <li>HOME</li>
+          <li>SEARCH</li>
+          <li>ASSIGNMENT</li>
+          <li>UTILITY</li>
+          <li>REPORTS</li>
+          <li>REQUEST</li>
+        </ul>
+      </nav>
+
+      {/* Dashboard Content */}
+      <main className="dashboard-main">
+        <div className="authority-info">PUBLIC AUTHORITY: Tripura Public Service Commission</div>
+
+        <div className="card-container">
+          <div className="dashboard-card">
+            <p><strong>PENDING FOR DISPOSED OFF</strong></p>
+            <p className="count red">4</p>
+          </div>
+
+          <div className="dashboard-card">
+            <p><strong>RTI REQUESTS</strong></p>
+            <p className="count">NEW: 3</p>
+            <p className="count">UNDER PROCESS: 6</p>
+          </div>
+
+          <div className="dashboard-card">
+            <p><strong>APPEALS</strong></p>
+            <p className="count">RAISED: 6</p>
+            <p className="count">DISPOSED: 7</p>
           </div>
         </div>
+      </main>
 
-        {/* Card 2 */}
-        <div className="dashboard-card">
-          <div className="card-icon">📩</div>
-          <div className="card-label">
-            <div className="card-title">RTI REQUESTS</div>
-            <div className="highlight">NEW: <span className="card-number">3</span></div>
-            <div className="highlight">UNDER PROCESS: <span className="card-number">6</span></div>
-          </div>
-        </div>
-
-        {/* Card 3 */}
-        <div className="dashboard-card">
-          <div className="card-icon">📩</div>
-          <div className="card-label">
-            <div className="card-title">APPEALS</div>
-            <div className="highlight">RAISED: <span className="card-number">6</span></div>
-            <div className="highlight">DISPOSED: <span className="card-number">7</span></div>
-          </div>
-        </div>
-      </div>
+      {/* Footer */}
+      <footer className="footer">
+        <p>Contents of the portal is provided by Administrative Reforms, Training, Pension and Public Grievances Department, Govt. of Tripura</p>
+        <p>© 2024. Maintained by Tripura Information Commission and Developed by NIC, Tripura</p>
+        <p>Visitor Count: 123456</p>
+      </footer>
     </div>
   );
 }

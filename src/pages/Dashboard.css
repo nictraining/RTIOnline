@@ -1,77 +1,82 @@
-/* tanisha gr8 */
-body {
-  background-image: url('C:\Users\tanis\reactjs\src\pages\form-background.png');
-}
 .dashboard-container {
-  padding: 30px 30px 203px 30px;
-  font-family: Arial, sans-serif;
-  text-align: center;
+  font-family: sans-serif;
+  background-color: white;
 }
 
-.dashboard-header {
+.header {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-.left-title,
-.center-title,
-.right-title {
+.portal-title h2 {
+  color: #007bff;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #007bff;
+  padding: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  color: white;
   font-weight: bold;
-  color: maroon;
-  font-size: 16px;
-  margin: 10px;
-  flex: 1 1 30%;
+  cursor: pointer;
+}
+
+.dashboard-main {
+  padding: 110px;
   text-align: center;
 }
 
-.dashboard-cards {
+.authority-info {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: maroon;
+}
+
+.card-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
 .dashboard-card {
-  border: 4px solid #1477d2;
-  border-radius: 8px;
-  width: 300px;
-  background: #f0f0f0;
+  border: 2px solid #007bff;
   padding: 20px;
-  text-align: center;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
+  width: 250px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color:#5a648a;
 }
 
-.card-icon {
-  font-size: 40px;
-  background-color: orange;
-  border-radius: 50px;
-  margin-bottom: 10px;
+.dashboard-card .count {
+  font-size: 1.2em;
+  margin: 5px 0;
 }
 
-.card-label {
-  font-weight: bold;
-  color: #600000;
-  font-size: 15px;
-  text-align: center;
-  width: 255px;
-
-}
-.new{
-  display: flex;
-  font-size: 15px;
-}
-.card-number {
-  display: flex;
-  font-size: 18px;
-
+.dashboard-card .count.red {
+  color: white;
 }
 
-.highlight {
-  font-weight: bold;
-  color: #600000;
-  display: flex;
-  flex-direction: row;
-  width: 215px;
+.footer {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 0.9em;
+}
+.portal-title {
+    text-align: center;
+    color: blue;
+    border: 0.5px solid red;
 }

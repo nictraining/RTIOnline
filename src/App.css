@@ -1,42 +1,187 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Ensure full height and no spacing */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ddd;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: darkred;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.login-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Banner styling */
+.banner {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 700px;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.banner img {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.banner-text h1 {
+  margin: 0;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.banner-text p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: black; /* Make text black */
+}
+
+.login-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.official-login {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #007bff;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Centered login box */
+.login-box {
+  background: white;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.login-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.card {
-  padding: 2em;
+.captcha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
 }
 
-.read-the-docs {
-  color: #888;
+.captcha img {
+  border: 1px solid #ccc;
+  margin-right: 10px;
 }
+
+.refresh-btn {
+  background: rgb(63, 187, 96);
+  border: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  width: 95%;
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reset-link {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.reset-link a {
+  color: #007bff;
+  text-decoration: none;
+
+}
+
+/* Footer always sticks to bottom and centered */
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.forgot-text {
+  color: black;
+}
+.captcha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.captcha-box {
+  background-color: blue;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.step-title{
+  color: #007bff;
+}
+
+
