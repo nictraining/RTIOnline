@@ -2,20 +2,24 @@ import React from 'react'
 
 const Button = ({ 
   children, 
-  type = 'button', 
   variant = 'primary', 
+  type = 'button', 
   onClick, 
   disabled = false,
   className = ''
 }) => {
-  const baseClass = 'login-button'
-  const variantClass = variant === 'secondary' ? 'btn-secondary' : ''
-  const classes = `${baseClass} ${variantClass} ${className}`.trim()
+  const baseClasses = 'btn'
+  const variantClasses = {
+    primary: 'btn-primary',
+    secondary: 'btn-secondary'
+  }
+
+  const buttonClasses = `${baseClasses} ${variantClasses[variant] || ''} ${className}`.trim()
 
   return (
     <button
       type={type}
-      className={classes}
+      className={buttonClasses}
       onClick={onClick}
       disabled={disabled}
     >

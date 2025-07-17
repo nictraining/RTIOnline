@@ -1,21 +1,16 @@
 import React from 'react'
+import Header from './COMPONENTS/header'
+import Navigation from './COMPONENTS/navigation'
+import Home from './main/home'
+import Footer from './COMPONENTS/footer'
 import './App.css'
-import Header from './components/header'
-import LoginForm from './components/loginform'
-import Footer from './components/footer'
 
 function App() {
   return (
-    <div className="app">
+    <div className="App">
       <Header />
-      <main className="main-content">
-        <div className="container">
-          <div className="login-section">
-            <h2 className="official-login-title">Official Login</h2>
-            <LoginForm />
-          </div>
-        </div>
-      </main>
+      <Navigation />
+      <Home />
       <Footer />
     </div>
   )

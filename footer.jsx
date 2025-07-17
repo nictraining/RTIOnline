@@ -3,8 +3,8 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
-        <div className="footer-content">
+      <div className="footer-content">
+        <div className="footer-text">
           Contents of the portal is provided by Administrative Reforms, Training, Pension and Public Grievances Department, Govt. of Tripura
         </div>
         <div className="footer-copyright">

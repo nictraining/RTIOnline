@@ -1,43 +1,35 @@
 import React from 'react'
 import emblem from '../assets/Emblem_of_India.svg'
-import rtilogo from '../assets/RIGHT_TO_INFORMATION_LOGO_23.svg'
-import lock from '../assets/icons8-lock.svg'
-
+import rti from '../assets/RIGHT_TO_INFORMATION_LOGO_23.svg'
 const Header = () => {
   return (
     <header className="header">
-      <div className="header-top">
-        <div className="container">
-          <div className="header-nav">
-            <div className="flex header-actions justify-end">
-              <a href="#" className="skip-link">Skip to main content</a>
-              <select className="language-selector">
-                <option>English</option>
-              </select>
-            </div>
-          </div>
+      <div className="header-content">
+        <div className="logo">
+          <img 
+            src={emblem} 
+            alt="Government of India Logo" 
+            className="logo"
+          />
         </div>
-      </div>
-      
-      <div className="header-main">
-        <div className="container">
-          <div className="header-content">
-            <div className="logo-section">
-              <div className="logo">
-                <img src={emblem} alt="" style={{width: '30px' ,height: 'auto'}} />
-              </div>
-              <div className="logo">
-                <img src={rtilogo} alt="" style={{width:'40px', height:'auto'}}/>
-              </div>
-              <div className="title-section">
-                <h1>Right to Information Online Portal</h1>
-                <p className="subtitle">
-                  An Initiative of Administrative Reforms, Training, Pension and Public Grievances Department, Government of Tripura
-                </p>
-              </div>
-            </div>
-            <button className="login-btn"><img src={lock} alt="" style={{width:'15px', height:'12px'}}/> LOGIN</button>
-          </div>
+        <div className="rti-icon">
+            <img src={rti} alt="rti logo" style={{width:'85px', height:'auto'}}/>
+          {/* <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+          </svg> */}
+        </div>
+        <div className="header-text">
+          <h1 className="header-title">Right to Information Online Portal</h1>
+          <p className="header-subtitle">
+            An initiative of Administrative Reforms, Training, Pension and Public Grievances Department, Government of Tripura
+          </p>
+        </div>
+        <div className="header-actions">
+          <a href="#main" className="skip-link">Skip to main content</a>
+          <select className="language-selector">
+            <option>🌐 English</option>
+            <option>हिंदी</option>
+          </select>
         </div>
       </div>
     </header>
